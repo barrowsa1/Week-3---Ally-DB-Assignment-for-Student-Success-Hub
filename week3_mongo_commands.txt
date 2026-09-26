@@ -1,0 +1,196 @@
+use student_success
+
+db.students.insertOne({
+  "studentId": 1,
+  "firstName": "Ally",
+  "lastName": "Barrows",
+  "email": "abarrows@example.com",
+  "program": "Engineering",
+  "major": "Computer Science",
+  "advisingNotes": [
+    {
+      "noteId": 1,
+      "noteText": "Talked about course registration and classes needed.",
+      "noteDate": "2026-09-23",
+      "advisorName": "John Doe",
+      "category": "Academic plan"
+    },
+    {
+      "noteId": 2,
+      "noteText": "Discussed progress in current courses and possible minors.",
+      "noteDate": "2026-09-18",
+      "advisorName": "John Doe",
+      "category": "Academic plan"
+    }
+  ],
+  "supportVisits": [
+    {
+      "supportId": 1,
+      "supportDate": "2026-09-24",
+      "serviceType": "Tutoring",
+      "serviceNotes": "Received tutoring for Java programming 202."
+    }
+  ]
+});
+
+db.students.insertOne({
+  "studentId": 2,
+  "firstName": "Levi",
+  "lastName": "Herstad",
+  "email": "lherstad@example.com",
+  "program": "Business",
+  "major": "Accounting",
+  "advisingNotes": [
+    {
+      "noteId": 3,
+      "noteText": "Talked about course registration and classes needed.",
+      "noteDate": "2026-09-13",
+      "advisorName": "Sarah Smith",
+      "category": "Academic plan"
+    },
+    {
+      "noteId": 4,
+      "noteText": "Discussed progress in current courses and possible minors.",
+      "noteDate": "2026-09-20",
+      "advisorName": "Sarah Smith",
+      "category": "Academic plan"
+    }
+  ],
+  "supportVisits": [
+    {
+      "supportId": 2,
+      "supportDate": "2026-09-10",
+      "serviceType": "Tutoring",
+      "serviceNotes": "Received tutoring for business 101."
+    },
+    {
+    "supportId": 7,
+    "supportDate": "2026-09-17",
+    "serviceType": "Writing Center",
+    "serviceNotes": "Received help writing a business report."
+  },
+  {
+    "supportId": 8,
+    "supportDate": "2026-09-23",
+    "serviceType": "Workshop",
+    "serviceNotes": "Attended a workshop about study skills and time management."
+  }
+  ]
+});
+
+db.students.insertOne({
+  "studentId": 3,
+  "firstName": "Peter",
+  "lastName": "Parker",
+  "email": "ppparker@example.com",
+  "program": "Science",
+  "major": "Biology",
+  "advisingNotes": [
+    {
+      "noteId": 5,
+      "noteText": "Talked about course registration and classes needed.",
+      "noteDate": "2026-09-12",
+      "advisorName": "Happy Hoggan",
+      "category": "Academic plan"
+    },
+    {
+      "noteId": 6,
+      "noteText": "Discussed stress management tools and talked about student's overall mental health.",
+      "noteDate": "2026-09-18",
+      "advisorName": "Happy Hoggan",
+      "category": "Well-being"
+    }
+  ],
+  "supportVisits": [
+    {
+      "supportId": 3,
+      "supportDate": "2026-09-22",
+      "serviceType": "Tutoring",
+      "serviceNotes": "Received tutoring on Genetics 203."
+    }
+  ]
+});
+
+db.students.insertOne({
+  "studentId": 4,
+  "firstName": "Tony",
+  "lastName": "Stark",
+  "email": "tstark@example.com",
+  "program": "Engineering",
+  "major": "Mechanical Engineering",
+  "advisingNotes": [
+    {
+      "noteId": 7,
+      "noteText": "Talked about course registration and classes needed.",
+      "noteDate": "2026-09-09",
+      "advisorName": "Pepper Potts",
+      "category": "Academic plan"
+    },
+    {
+      "noteId": 8,
+      "noteText": "Discussed progress in current courses and possible minors.",
+      "noteDate": "2026-09-11",
+      "advisorName": "Pepper Potts",
+      "category": "Academic plan"
+    }
+  ],
+  "supportVisits": [
+  {
+    "supportId": 4,
+    "supportDate": "2026-09-20",
+    "serviceType": "Tutoring",
+    "serviceNotes": "Received tutoring for Physics 302."
+  },
+  {
+    "supportId": 9,
+    "supportDate": "2026-09-22",
+    "serviceType": "Writing Center",
+    "serviceNotes": "Received help writing a physics paper."
+  },
+  {
+    "supportId": 10,
+    "supportDate": "2026-09-25",
+    "serviceType": "Workshop",
+    "serviceNotes": "Attended a workshop about study skills and time management."
+  }
+]
+});
+
+db.students.insertOne({
+  "studentId": 5,
+  "firstName": "Ava",
+  "lastName": "Rain",
+  "email": "arain@example.com",
+  "program": "Science",
+  "major": "Psychology",
+  "advisingNotes": [
+    {
+      "noteId": 9,
+      "noteText": "Talked about internships and jobs available.",
+      "noteDate": "2026-09-07",
+      "advisorName": "Mitch Dehan",
+      "category": "Career planning"
+    },
+    {
+      "noteId": 10,
+      "noteText": "Discussed progress in current courses and possible minors.",
+      "noteDate": "2026-09-08",
+      "advisorName": "Mitch Dehan",
+      "category": "Academic plan"
+    }
+  ],
+  "supportVisits": [
+    {
+      "supportId": 5,
+      "supportDate": "2026-09-09",
+      "serviceType": "Tutoring",
+      "serviceNotes": "Received tutoring with Psychology 101."
+    },
+    {
+      "supportId": 6,
+      "supportDate": "2026-09-09",
+      "serviceType": "Workshop",
+      "serviceNotes": "Attended a Psychology Workshop on therapy resources."
+    }
+  ]
+});
