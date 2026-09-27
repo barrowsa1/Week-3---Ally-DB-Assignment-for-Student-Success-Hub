@@ -35,4 +35,4 @@ JSON Sample document:
 }
 
 Explanation:
-I chose to embed the AdvisingNotes and SupportVisits into the Student collection because they are all connected together and tied to one specific student. Instead of using StudentID to connect them from separate tables or collections, the information can all be easily accessed and edited depending on what it is being used for. This will cause consistency within the system to be harder to maintain because we are gaining more flexibility within the system, as the CAP theorem explains.
+I chose to embed the AdvisingNotes and SupportVisits into the Student collection because they are all connected together and tied to one specific student. Instead of using StudentID to connect them from separate tables or collections, the information can all be easily accessed and edited depending on what it is being used for. This gives the system more flexibility, but it can also make consistency and data integrity harder to maintain as this system does not enforce the same constraints as a relational database.

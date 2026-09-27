@@ -1,4 +1,4 @@
-use student_success
+use ('student_success');
 
 db.students.insertOne({
   "studentId": 1,
@@ -59,7 +59,7 @@ db.students.insertOne({
   "supportVisits": [
     {
       "supportId": 2,
-      "supportDate": "2026-09-10",
+      "supportDate": "2026-08-10",
       "serviceType": "Tutoring",
       "serviceNotes": "Received tutoring for business 101."
     },
@@ -137,7 +137,7 @@ db.students.insertOne({
   "supportVisits": [
   {
     "supportId": 4,
-    "supportDate": "2026-09-20",
+    "supportDate": "2026-08-15",
     "serviceType": "Tutoring",
     "serviceNotes": "Received tutoring for Physics 302."
   },
@@ -182,7 +182,7 @@ db.students.insertOne({
   "supportVisits": [
     {
       "supportId": 5,
-      "supportDate": "2026-09-09",
+      "supportDate": "2026-08-20",
       "serviceType": "Tutoring",
       "serviceNotes": "Received tutoring with Psychology 101."
     },
